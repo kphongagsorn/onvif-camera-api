@@ -47,7 +47,7 @@ This is an API to control the Axis cameras.
   ]
 }
 ```
-####Move Selected Camera:
+####Moving Camera:
 ```json
 {
   "status_code": "ok",
