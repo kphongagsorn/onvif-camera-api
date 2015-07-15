@@ -6,7 +6,7 @@ This is an API to control the Axis cameras.  The API server code passes paramate
 * Tilt
 * Zoom
 
-###Example calls:
+##Example calls:
 ####View All Presets:
 method: GET
 
