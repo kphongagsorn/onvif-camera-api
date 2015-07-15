@@ -12,14 +12,14 @@ url/v1/camera/ptz/preset
 ####View a Selected Preset via ID: 
 method: GET
 
-url/v1/camera/ptz/preset/<preset id>
+url/v1/camera/ptz/preset/preset_id
 
 `curl -v -H "Content-Type: application/json" -X GET http://127.0.0.1:8888/v1/camera/ptz/preset/1`
 
 ####Move Selected Camera via Preset ID:
 method: POST
 
-url/v1/camera/ptz/preset/<preset id>
+url/v1/camera/ptz/preset/preset_id
 
 `curl -v -H "Content-Type: application/json" -X POST -d '{"username":"myUsername","password":"myPwd"}' http://127.0.0.1:8888/v1/camera/ptz/preset/4`
 
