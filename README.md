@@ -1,5 +1,5 @@
 # onvif-camera-api
-This is an API to control the Axis cameras.
+This is an API to control the Axis cameras.  The API server code passes paramaters to onvif.jar to select and control the camera.
 
 ###Example calls:
 ####View All Presets:
