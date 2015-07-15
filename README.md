@@ -72,8 +72,6 @@ url/v1/camera/ptz/preset/create
 {
   "status_code": "ok",
   "status_message": [
-    "Connect to camera, please wait ...",
-    "Connection to camera successful!",
     "x -1.0  y -1.0  zoom 2.0",
     "Move completed."
   ]
