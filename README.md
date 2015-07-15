@@ -1,13 +1,12 @@
 # onvif-camera-api
 This is an API to control the Axis cameras.  The API server code passes paramaters to onvif.jar to select and control the camera.
 
+Tested on: Python 2.7.6, Flask 0.10.1 
+
 #####Control options:
 * Pan
 * Tilt
 * Zoom
-
-
-Tested on: Python 2.7.6, Flask 0.10.1 
 
 ##Example calls:
 ####View All Presets:
