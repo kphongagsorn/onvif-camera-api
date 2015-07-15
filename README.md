@@ -43,7 +43,7 @@ url/v1/camera/ptz/preset/create
 `curl -H "Content-Type: application/json" -X POST -d '{"url":"172.16.1.140","pan":"-1.0","tilt":"1.0","zoom":"2.0"}' http://127.0.0.1:8888/v1/camera/ptz/preset/create`
 
 
-###Example JSON Output:
+##Example JSON Output:
 ####Presets:
 ```json
 {
