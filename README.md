@@ -19,7 +19,8 @@ This is an API to control the Axis cameras.
 
 
 ##Example JSON Output:
-Presets:
+####Presets:
+'''json
 {
   "settings": [
     {
@@ -45,8 +46,9 @@ Presets:
     }
   ]
 }
-
-Move Selected Camera:
+'''
+####Move Selected Camera:
+'''json
 {
   "status_code": "ok",
   "status_message": [
@@ -56,3 +58,4 @@ Move Selected Camera:
     "Move completed."
   ]
 }
+'''
