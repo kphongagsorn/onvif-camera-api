@@ -35,14 +35,14 @@ method: POST
 
 url/v1/camera/ptz/
 
-`curl -H "Content-Type: application/json" -X POST -d '{"url":"172.16.1.140","username":"myUsername","password":"myPwd","pan":"-1.0","tilt":"-1.0","zoom":"2.0"}' http://127.0.0.1:8888/v1/camera/ptz`
+`curl -H "Content-Type: application/json" -X POST -d '{"url":"0.0.0.0","username":"myUsername","password":"myPwd","pan":"-1.0","tilt":"-1.0","zoom":"2.0"}' http://127.0.0.1:8888/v1/camera/ptz`
 
 ####Create Preset:
 method: POST
 
 url/v1/camera/ptz/preset/create
 
-`curl -H "Content-Type: application/json" -X POST -d '{"url":"172.16.1.140","pan":"-1.0","tilt":"1.0","zoom":"2.0"}' http://127.0.0.1:8888/v1/camera/ptz/preset/create`
+`curl -H "Content-Type: application/json" -X POST -d '{"url":"0.0.0.0","pan":"-1.0","tilt":"1.0","zoom":"2.0"}' http://127.0.0.1:8888/v1/camera/ptz/preset/create`
 
 
 ##Example JSON Output:
@@ -54,21 +54,21 @@ url/v1/camera/ptz/preset/create
       "id": 1,
       "pan": "0.0",
       "tilt": "0.0",
-      "url": "172.16.1.130",
+      "url": "0.0.0.0",
       "zoom": "0.0"
     },
     {
       "id": 2,
       "pan": "0.0",
       "tilt": "0.0",
-      "url": "172.16.1.134",
+      "url": "192.168.1.1",
       "zoom": "0.0"
     },
     {
       "id": 3,
       "pan": "0.0",
       "tilt": "0.0",
-      "url": "172.16.1.140",
+      "url": "127.0.0.1",
       "zoom": "0.0"
     }
   ]
