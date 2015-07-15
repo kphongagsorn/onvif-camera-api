@@ -3,7 +3,7 @@ This is an API to control the Axis cameras.  The API server code passes paramete
 
 Tested on: Python 2.7.6, Flask 0.10.1, Java 1.7.0_25
 
-#####Camera Control options:
+#####Camera Control Options:
 * Pan
 * Tilt
 * Zoom
