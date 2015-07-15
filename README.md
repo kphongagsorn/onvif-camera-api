@@ -20,7 +20,7 @@ This is an API to control the Axis cameras.
 
 ##Example JSON Output:
 ####Presets:
-'''json
+```json
 {
   "settings": [
     {
@@ -46,9 +46,9 @@ This is an API to control the Axis cameras.
     }
   ]
 }
-'''
+```
 ####Move Selected Camera:
-'''json
+```json
 {
   "status_code": "ok",
   "status_message": [
@@ -58,4 +58,4 @@ This is an API to control the Axis cameras.
     "Move completed."
   ]
 }
-'''
+```
