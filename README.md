@@ -48,7 +48,18 @@ url/v1/camera/ptz/preset/create
 
 
 ##Example JSON Output:
-####Presets:
+####Moving Camera:
+```json
+{
+  "status_code": "ok",
+  "status_message": [
+    "x -1.0  y -1.0  zoom 2.0",
+    "Move completed."
+  ]
+}
+```
+
+####Viewing All Presets:
 ```json
 {
   "settings": [
@@ -63,26 +74,31 @@ url/v1/camera/ptz/preset/create
       "id": 2,
       "pan": "0.0",
       "tilt": "0.0",
-      "url": "192.168.1.1",
+      "url": "10.10.10.10",
       "zoom": "0.0"
     },
     {
       "id": 3,
       "pan": "0.0",
       "tilt": "0.0",
-      "url": "127.0.0.1",
+      "url": "192.168.1.1",
       "zoom": "0.0"
     }
-  ]
+  ],
+  "status_code": "ok"
 }
 ```
-####Moving Camera:
+
+####Selecting/Viewing a Single Preset:
 ```json
 {
-  "status_code": "ok",
-  "status_message": [
-    "x -1.0  y -1.0  zoom 2.0",
-    "Move completed."
-  ]
+  "settings": {
+    "id": 1,
+    "pan": "0.0",
+    "tilt": "0.0",
+    "url": "0.0.0.0",
+    "zoom": "0.0"
+  },
+  "status_code": "ok"
 }
 ```
