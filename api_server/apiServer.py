@@ -1,5 +1,4 @@
 #!flask/bin/python
-import json
 from flask import Flask, jsonify, abort, make_response, request
 from subprocess import *
 
@@ -123,15 +122,15 @@ def get_setting(setting_id):
     setting = [setting for setting in settings if setting['id'] == setting_id]
     if len(setting) == 0:
         abort(404)
-    return jsonify({'settings': setting[0]}), 200
+    return jsonify({'status_code':'ok','settings': setting[0]}), 200
 
 @app.route('/v1/camera/ptz/preset', methods=['GET'])
 def get_settings():
-    return jsonify({'settings': settings})
+    return jsonify({'status_code':'ok','settings': settings})
 
 @app.errorhandler(404)
 def not_found(error):
-    return make_response(jsonify({'error': 'Not found'}), 404)
+    return make_response(jsonify({'status_code':'ng','status_message': 'Error, not found'}), 404)
 
 if __name__ == '__main__':
     app.run(debug=True, port=8888)
