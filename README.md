@@ -5,41 +5,41 @@ Tested on: Python 2.7.6, Flask 0.10.1, Java 1.7.0_25
 
 onvif library based on: https://github.com/milg0/onvif-java-lib
 
-#####Camera Control Options:
+##### Camera Control Options:
 * Pan
 * Tilt
 * Zoom
 
-##Example calls:
-####View All Presets:
+## Example calls:
+#### View All Presets:
 method: GET
 
 url/v1/camera/ptz/preset
 
 `curl -H "Content-Type: application/json" -X GET http://127.0.0.1:8888/v1/camera/ptz/preset`
 
-####View a Selected Preset via ID: 
+#### View a Selected Preset via ID: 
 method: GET
 
 url/v1/camera/ptz/preset/preset_id
 
 `curl -H "Content-Type: application/json" -X GET http://127.0.0.1:8888/v1/camera/ptz/preset/1`
 
-####Move Selected Camera via Preset ID:
+#### Move Selected Camera via Preset ID:
 method: POST
 
 url/v1/camera/ptz/preset/preset_id
 
 `curl -H "Content-Type: application/json" -X POST -d '{"username":"myUsername","password":"myPwd"}' http://127.0.0.1:8888/v1/camera/ptz/preset/4`
 
-####Move Selected Camera:
+#### Move Selected Camera:
 method: POST
 
 url/v1/camera/ptz/
 
 `curl -H "Content-Type: application/json" -X POST -d '{"url":"0.0.0.0","username":"myUsername","password":"myPwd","pan":"-1.0","tilt":"-1.0","zoom":"2.0"}' http://127.0.0.1:8888/v1/camera/ptz`
 
-####Create Preset:
+#### Create Preset:
 method: POST
 
 url/v1/camera/ptz/preset/create
@@ -47,8 +47,8 @@ url/v1/camera/ptz/preset/create
 `curl -H "Content-Type: application/json" -X POST -d '{"url":"0.0.0.0","pan":"-1.0","tilt":"1.0","zoom":"2.0"}' http://127.0.0.1:8888/v1/camera/ptz/preset/create`
 
 
-##Example JSON Output:
-####Moving Camera:
+## Example JSON Output:
+#### Moving Camera:
 ```json
 {
   "status_code": "ok",
@@ -59,7 +59,7 @@ url/v1/camera/ptz/preset/create
 }
 ```
 
-####Viewing All Presets:
+#### Viewing All Presets:
 ```json
 {
   "settings": [
@@ -89,7 +89,7 @@ url/v1/camera/ptz/preset/create
 }
 ```
 
-####Selecting/Viewing a Single Preset:
+#### Selecting/Viewing a Single Preset:
 ```json
 {
   "settings": {
